@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Image recognition</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<center>
+<h1>Image recognition</h1>
+<br>
+<h2>This model has been trained in recognition of these objects</h2>
+<p>water bottle</p>
+<p>Mobile phone</p>
+<p>watch</p>
+<p>box</p>
+<p>cup</p>
+<p>book</p>
+<h3>Webcam View:</h3>
+<div id="camera"></div>
+<br>
+<br>
+<div id="result"></div>
+<br>
+<button class="btn btn-info"  onclick="take_snapshot()">Capture Image</button>
+<button class="btn btn-warning" onClick="identify_image()">Identify Image</button>
+<br>
+<br>
+<p>Name of the object:<span id="object"></span></p>
+<p>Accuracy:<span id="accuracy"></span></p>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
